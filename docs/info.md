@@ -9,12 +9,10 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This design uses a standard 640x480 VGA timing generator paired with a hardware state machine to manage a sequential typewriter animation effect. The rendering engine relies entirely on synthesized combinatorial logic to map a grid of macro-characters, utilizing a coordinate-based spatial hash (PRNG) to generate a pseudo-random, flickering matrix of tiny green ASCII characters within each block.
 
 ## How to test
 
-Explain how to use your project
+Connect a standard Tiny Tapeout VGA PMOD to the dedicated output pins and ensure the system clock (clock_hz in info.yaml) is set to exactly 25 MHz. Plug in a standard VGA monitor to watch the phrase "As Above, So Below" type out on the screen, pause, erase in reverse, and loop, complete with a blinking underscore cursor.
 
-## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
